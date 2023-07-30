@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/deleteTask"
+        android:title="Delete a Task"
+        app:showAsAction="never"/>
+    <item android:id="@+id/addTask"
+        android:title="Add a new Task"
+        app:showAsAction="never"/>
+</menu>

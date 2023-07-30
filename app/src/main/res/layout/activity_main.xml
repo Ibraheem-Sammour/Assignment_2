@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#05009688"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/Flfragment"
+        android:layout_width="411dp"
+        android:layout_height="466dp"
+        android:background="#33009688"
+        app:layout_constraintBottom_toTopOf="@+id/sortTasksTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sortTasksTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the list of tasks to view?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Flfragment" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="236dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewTasksButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sortTasksTV">
+
+        <RadioButton
+            android:id="@+id/TasksToDoRadioBttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tasks to do" />
+
+        <RadioButton
+            android:id="@+id/deletedTasksRadioBttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deleted" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/viewTasksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="View tasks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
